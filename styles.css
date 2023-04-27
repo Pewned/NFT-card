@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 18px; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.6rem 1.6rem 2rem 1.6rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+/* IMG AND IMG ACTIVE STYLING */
+
+.img {
+  border-radius: 0.7rem;
+  display: block;
+  width: 100%;
+}
+
+.img-wrap {
+  position: relative;
+  margin-bottom: 1.7rem;
+}
+
+.img-wrap:active::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: hsla(178, 100%, 50%, 0.445);
+  border-radius: 0.7rem;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.img-wrap:active .view {
+  display: block;
+}
+
+/* MAIN CONTENT STYLING */
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.45rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+}
+
+h1:active {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.main-text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin-bottom: 1.1rem;
+  font-size: 18px;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  font-size: 0.95rem;
+}
+
+.time {
+  gap: 0.5rem;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+}
+
+.eth {
+  gap: 0.5rem;
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+}
+
+/* AUTHOR STYLING */
+
+.author {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+  font-weight: 300;
+}
+
+.author-avatar {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.decor {
+  color: hsl(215, 51%, 70%);
+}
+
+.creation {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+
+.author-name:active {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+/* FOOTER */
+
+footer {
+  color: hsl(0, 0%, 100%);
+}
